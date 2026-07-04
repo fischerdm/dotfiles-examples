@@ -4,6 +4,16 @@ A small teaching example showing how to keep your personal [Claude Code](https:/
 
 This is a public, standalone example. It's not connected to anyone's real dotfiles repo — copy the pattern and adapt the content to your own preferences.
 
+## Prerequisites
+
+- **[Claude Code](https://claude.com/claude-code)** — `CLAUDE.md` is its config file, so this only matters if you're using it.
+- **git** — for tracking and pushing the dotfiles repo.
+- **[GitHub CLI (`gh`)](https://cli.github.com/)** — used below to create/clone the repo from the terminal (a browser works too, `gh` is just faster).
+  ```sh
+  brew install gh      # macOS; see cli.github.com/manual for other platforms
+  gh auth login        # interactive: choose GitHub.com, HTTPS, "Login with a web browser"
+  ```
+
 ## The pattern
 
 `~/.claude/CLAUDE.md` is just a file on disk that Claude Code reads at the start of every session, in every project. Two facts make the "dotfiles" approach work:
